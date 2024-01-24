@@ -34,10 +34,10 @@ app.get("/", (req, res) => {
 //   res.send("API WORKING");
 // });
 
-app.get("/form", (req, res) => {
-  res.sendFile(`${__dirname}/public/form.html`);
-  console.log("Form data requested and submission send it");
-});
+// app.get("/form", (req, res) => {
+//   res.sendFile(`${__dirname}/public/form.html`);
+//   console.log("Form data requested and submission send it");
+// });
 
 app.post("/formPost", (req, res) => {
   const newData = req.body;
